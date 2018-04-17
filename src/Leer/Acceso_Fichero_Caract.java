@@ -8,7 +8,7 @@ import java.io.IOException;
  *
  * @author Javier
  */
-public class Acceso_Fichero {
+public class Acceso_Fichero_Caract {
 
     public static void main(String[] args) {
         Leer_Fichero acceder = new Leer_Fichero();
