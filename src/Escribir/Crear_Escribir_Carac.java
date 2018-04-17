@@ -8,7 +8,7 @@ import java.io.IOException;
  *
  * @author Javier
  */
-public class Escribir_Fichero_Caract {
+public class Crear_Escribir_Carac {
 
     public static void main(String[] args) {
         Escribiendo accede_write = new Escribiendo();
