@@ -7,7 +7,7 @@ import java.io.IOException;
  *
  * @author Javier
  */
-public class Leer_Escribir {
+public class Leer_Escribir_Bytes {
     
     public static void main(String[] args) {
         
