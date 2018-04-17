@@ -1,4 +1,4 @@
-package Escribir;
+package Caracteres;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.io.IOException;
  *
  * @author Javier
  */
-public class Crear_Escribir_Carac {
+public class Crear_Escribir {
 
     public static void main(String[] args) {
         Escribiendo accede_write = new Escribiendo();

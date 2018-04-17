@@ -1,4 +1,4 @@
-package Leer;
+package Caracteres;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.io.IOException;
  *
  * @author Javier
  */
-public class Leer_Caract {
+public class Leer {
 
     public static void main(String[] args) {
         Leer_Fichero acceder = new Leer_Fichero();
