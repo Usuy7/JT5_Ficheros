@@ -1,6 +1,7 @@
 package Caracteres;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -23,6 +24,8 @@ class Escribiendo {
         String frase = "Esto es una prueba de escritura parte 4";
 
         try {
+            File f = new File("Fichero.txt");
+            FileWriter flS = new FileWriter(f, true);
             // FileWriter escritura = new FileWriter("C:/Users/AlumMati/Desktop/ejemplo_nuevo.txt"); Crea un fichero nuevo o sobreescribe el fichero
             FileWriter escritura = new FileWriter("C:/Users/AlumMati/Desktop/ejemplo_nuevo5.txt", true); // Si existe añade el contenido, si No = lo crea y escribe.
             BufferedWriter buffer = new BufferedWriter(escritura);
