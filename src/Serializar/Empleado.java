@@ -1,5 +1,6 @@
 package Serializar;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -8,7 +9,7 @@ import java.util.GregorianCalendar;
  * @author Javi
  */
 
-public class Empleado {
+public class Empleado implements Serializable{
     
     private final String nombre;
     private double sueldo;
