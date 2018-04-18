@@ -22,8 +22,9 @@ public class Serializando {
         personal[2] = new Empleado("Pepito", 42000, 2012, 9, 5);
         
         try {
-            
-            ObjectOutputStream escribiendo_fichero = new ObjectOutputStream(new FileOutputStream("C:/Users/Desktop/Empleados.txt"));
+            ObjectOutputStream escribiendo_fichero = new ObjectOutputStream(new FileOutputStream("C:/Users/AlumMati/Desktop/Empleados.txt"));
+            escribiendo_fichero.writeObject(personal);
+            escribiendo_fichero.close();
             
         } catch (IOException e) {
             System.out.println("Error en el acceso");
