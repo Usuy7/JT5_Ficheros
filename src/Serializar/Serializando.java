@@ -1,5 +1,9 @@
 package Serializar;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 /**
  *
  * @author Javi
@@ -16,5 +20,13 @@ public class Serializando {
         personal[0] = jefe;
         personal[1] = new Empleado("Ana", 36400, 2017, 11, 26);
         personal[2] = new Empleado("Pepito", 42000, 2012, 9, 5);
+        
+        try {
+            
+            ObjectOutputStream escribiendo_fichero = new ObjectOutputStream(new FileOutputStream("C:/Users/Desktop/Empleados.txt"));
+            
+        } catch (IOException e) {
+            System.out.println("Error en el acceso");
+        }
     }
 }
