@@ -1,6 +1,7 @@
 package Caracteres;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -32,8 +33,10 @@ class Leer_Fichero {
 
             entrada.close();
 
-        } catch (IOException e) {
-            System.out.println("No se ha encontrado el archivo");
+        } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
+            System.out.println("No se encuentra el fichero");
+        } catch (IOException e) { // qué hacer si hay un error en la lectura del fichero
+            System.out.println("No se puede leer el fichero ");
         }
     }
 }

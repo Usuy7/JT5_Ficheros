@@ -2,6 +2,7 @@ package Caracteres;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -32,7 +33,6 @@ class Escribiendo {
             escritura.write(frase);
             System.out.println("Done");
             escritura.close();
-            
             /* Comprobar que un fichero existe y modificarlo
             
             File archivo = new File("C:/Users/AlumMati/Desktop/ejemplo5.txt");
@@ -44,11 +44,12 @@ class Escribiendo {
                 bw = new BufferedWriter(new FileWriter(archivo));
                 bw.write("Acabo de crear el fichero de texto.");
             }
-            */
-            
-        } catch (IOException e) {
-            System.out.println("No se ha encontrado el archivo");
-        }
+             */
 
+        } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
+            System.out.println("No se encuentra el fichero");
+        } catch (IOException e) { // qué hacer si hay un error en la lectura del fichero
+            System.out.println("No se puede leer el fichero ");
+        }
     }
 }
