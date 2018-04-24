@@ -18,7 +18,7 @@ public class Serializando {
     public static void main(String[] args) {
 
         Administrador jefe = new Administrador("Juan", 80000, 2005, 12, 15);
-         Administrador jefe2 = new Administrador("Juan", 80000, 2005, 12, 15);
+        Administrador jefe2 = new Administrador("Juan", 80000, 2005, 12, 15);
         jefe.setIncentivo(5000);
         jefe2.setIncentivo(1000000);
         personal[0] = jefe;
