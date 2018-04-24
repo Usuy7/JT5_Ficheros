@@ -24,7 +24,7 @@ public class Empleado implements Serializable{
     
     @Override
     public String toString(){
-        return "Nombre = " + nombre + ", Sueldo = " + sueldo + ", Fecha de Contrato = " + fechaContrato;
+        return "\nNombre = " + nombre + "\nSueldo = " + sueldo + "\nFecha de Contrato = " + fechaContrato;
     }
     
     public void subirSueldo (double porcentaje){

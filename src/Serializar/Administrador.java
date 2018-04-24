@@ -16,7 +16,7 @@ public class Administrador extends Empleado{
     
     @Override
     public String toString(){
-        return super.toString() + " Incentivo = " + incentivo;
+        return super.toString() + "\nIncentivo = " + incentivo;
     }
     
     @Override
