@@ -7,7 +7,7 @@ import java.io.IOException;
 
 /**
  *
- * @author Javier
+ * @author Javi
  */
 public class Leer_Escribir_Bytes {
 
