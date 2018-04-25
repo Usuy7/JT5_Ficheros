@@ -31,7 +31,7 @@ class Leer_Fichero {
                 if (linea != null)  System.out.println(linea);
             } while (linea != null);
 
-            entrada.close();
+            buffer.close();
 
             /*
             LEER TOKENS
