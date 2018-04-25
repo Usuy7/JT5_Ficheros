@@ -30,9 +30,10 @@ class Escribiendo {
             // FileWriter escritura = new FileWriter("C:/Users/AlumMati/Desktop/ejemplo_nuevo.txt"); Crea un fichero nuevo o sobreescribe el fichero
             FileWriter escritura = new FileWriter("C:\\Users\\AlumMati\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Caracteres\\ejemplo.txt", true); // Si existe añade el contenido, si No = lo crea y escribe.
             BufferedWriter buffer = new BufferedWriter(escritura); // creamos un buffer donde guardamos la informacion
-            escritura.write(frase);
+            buffer.newLine();
+            buffer.write(frase);
             System.out.println("Done");
-            escritura.close();
+            buffer.close();
             /* Comprobar que un fichero existe y modificarlo
             
             File archivo = new File("C:/Users/AlumMati/Desktop/ejemplo5.txt");
