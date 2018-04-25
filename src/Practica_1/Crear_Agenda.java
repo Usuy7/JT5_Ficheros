@@ -23,7 +23,7 @@ public class Crear_Agenda {
 
     public Crear_Agenda() {
         try {
-            File f = new File("C:\\Users\\AlumMati\\Desktop\\Agenda.txt");
+            File f = new File("C:\\Users\\AlumMati\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_1\\Agenda.txt");
             FileWriter escritura = new FileWriter(f, true);
             System.out.println(f.getAbsolutePath());
             System.out.println(f.canRead());
