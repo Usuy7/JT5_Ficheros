@@ -22,7 +22,7 @@ class Leer_Fichero {
     public void leer() {
 
         try {
-            FileReader entrada = new FileReader("C:/Users/AlumMati/Desktop/ejemplo9.txt");
+            FileReader entrada = new FileReader("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Caracteres\\ejemplo.txt");
             BufferedReader buffer = new BufferedReader(entrada);
             
             String linea ="";
@@ -31,7 +31,7 @@ class Leer_Fichero {
                 if (linea != null)  System.out.println(linea);
             } while (linea != null);
 
-            buffer.close();
+            entrada.close();
 
             /*
             LEER TOKENS
