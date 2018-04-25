@@ -28,7 +28,7 @@ class Escribiendo {
             File f = new File("Fichero.txt"); // creamos un archivo
             FileWriter flS = new FileWriter(f, true);  // abrimos un flujo de datos al archivo
             // FileWriter escritura = new FileWriter("C:/Users/AlumMati/Desktop/ejemplo_nuevo.txt"); Crea un fichero nuevo o sobreescribe el fichero
-            FileWriter escritura = new FileWriter("C:/Users/AlumMati/Desktop/ejemplo_nuevo5.txt", true); // Si existe añade el contenido, si No = lo crea y escribe.
+            FileWriter escritura = new FileWriter("C:\\Users\\AlumMati\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Caracteres\\ejemplo.txt", true); // Si existe añade el contenido, si No = lo crea y escribe.
             BufferedWriter buffer = new BufferedWriter(escritura); // creamos un buffer donde guardamos la informacion
             escritura.write(frase);
             System.out.println("Done");
