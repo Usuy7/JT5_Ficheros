@@ -5,10 +5,24 @@
  */
 package Practica_2;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  *
  * @author Javier
  */
 public class Crear_Clientes {
+    public static void main(String[] args) {
+        new Crear_Clientes();
+    }
     
+    BufferedReader tc = new BufferedReader(new InputStreamReader(System.in));
+    int num_cuenta;
+    String nombre, apellido;
+    double saldo;
+    
+    public Crear_Clientes (){
+        
+    }
 }
