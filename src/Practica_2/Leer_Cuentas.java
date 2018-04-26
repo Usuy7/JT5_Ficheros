@@ -21,7 +21,7 @@ public class Leer_Cuentas {
     ArrayList <Cuenta> cuentas = new ArrayList();
     
     public Leer_Cuentas() {
-        try{
+         try{
             FileReader entrada = new FileReader("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_2\\Cuentas.txt");
             BufferedReader buffer = new BufferedReader(entrada);
             
