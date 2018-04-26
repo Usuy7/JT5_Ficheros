@@ -5,22 +5,24 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /**
  *
  * @author Javier
  */
-public class Leer_Clientes {
+public class Leer_Cuentas {
     public static void main(String[] args) {
-        new Leer_Clientes();
+        new Leer_Cuentas();
     }
     
     BufferedReader tc = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList <Cuenta> cuentas = new ArrayList();
     
-    public Leer_Clientes() {
+    public Leer_Cuentas() {
         try{
-            FileReader entrada = new FileReader("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_2\\Clientes.txt");
+            FileReader entrada = new FileReader("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_2\\Cuentas.txt");
             BufferedReader buffer = new BufferedReader(entrada);
             
             System.out.println("Cuenta \tNombre \tApellido  Saldo");
@@ -29,14 +31,20 @@ public class Leer_Clientes {
             String linea = buffer.readLine();
             
             while (linea != null){
-                 StringTokenizer token = new StringTokenizer(linea," ");
-                int num_cuenta = Integer.parseInt(token.nextToken());
+                StringTokenizer token = new StringTokenizer(linea," ");
+                int cuenta = Integer.parseInt(token.nextToken());
                 String nombre = token.nextToken();
                 String apellido = token.nextToken();
                 double saldo = Double.parseDouble(token.nextToken());
-                System.out.println(num_cuenta + "\t" + nombre + "\t" + apellido + "\t" + saldo);
+                
+                cuentas.add(new Cuenta(cuenta, nombre, apellido, saldo));
                 linea = buffer.readLine();
             }
+            
+            for (Cuenta cuenta : cuentas) {
+                System.out.println(cuentas.toString());
+            }
+            
             buffer.close();
             
         } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
