@@ -40,11 +40,9 @@ public class Leer_Cuentas {
                 cuentas.add(new Cuenta(cuenta, nombre, apellido, saldo));
                 linea = buffer.readLine();
             }
-            
-            for (Cuenta cuenta : cuentas) {
-                System.out.println(cuentas.toString());
+            for (int i = 0; i < cuentas.size(); i++) {
+                System.out.println(cuentas.get(i).toString());
             }
-            
             buffer.close();
             
         } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero

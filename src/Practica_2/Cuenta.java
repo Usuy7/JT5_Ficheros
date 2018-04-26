@@ -22,7 +22,7 @@ public class Cuenta {
 
     @Override
     public String toString (){
-        return "Cuenta: " + cuenta + "\nNombre: " + nombre + "\nApellido: " + apellido + "\nSaldo: " + saldo;
+        return cuenta + "\t" + nombre + "\t" + apellido + "  " + saldo;
     }
     
     /**
