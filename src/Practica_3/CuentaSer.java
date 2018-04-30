@@ -40,7 +40,7 @@ public final class CuentaSer {
 
             for (Cuenta c : cuentas) {
                 if (c != null) {
-                    System.out.println(c);
+                    System.out.println(c.toString());
                 }
             }
 

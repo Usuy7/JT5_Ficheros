@@ -12,10 +12,10 @@ import java.io.InputStreamReader;
  *
  * @author Javier
  */
-public class Crear_Cuentas {
+public class Crear_Escribir_Cuentas {
 
     public static void main(String[] args) {
-        new Crear_Cuentas();
+        new Crear_Escribir_Cuentas();
     }
 
     BufferedReader tc = new BufferedReader(new InputStreamReader(System.in));
@@ -23,7 +23,7 @@ public class Crear_Cuentas {
     String nombre, apellido;
     double saldo;
 
-    public Crear_Cuentas() {
+    public Crear_Escribir_Cuentas() {
         try {
             File f = new File("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_2\\Cuentas.txt");
             FileWriter escritura = new FileWriter(f, true);
