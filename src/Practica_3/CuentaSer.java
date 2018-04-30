@@ -26,10 +26,11 @@ public final class CuentaSer {
     ArrayList<Cuenta> cuentas = new ArrayList<>();
 
     public CuentaSer() {
-        Crear_Leer();
+        Recuperar_Leer();
+        Sobreescribir();
     }
 
-    public void Crear_Leer() {
+    public void Recuperar_Leer() {
 
         try {
 
@@ -56,9 +57,9 @@ public final class CuentaSer {
     public void Sobreescribir() {
         
         try {
-            ObjectOutputStream serializar_object = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_3\\Cuentas.txt"));
-            serializar_object.writeObject(cuentas);
-            serializar_object.close();
+            ObjectOutputStream serializar = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_3\\Cuentas.txt"));
+            serializar.writeObject(cuentas);
+            serializar.close();
         } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
             System.out.println("No se encuentra el fichero");
         } catch (IOException e) { // qué hacer si hay un error en la lectura del fichero
