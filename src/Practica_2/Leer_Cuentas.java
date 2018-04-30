@@ -18,7 +18,7 @@ public class Leer_Cuentas {
     }
     
     BufferedReader tc = new BufferedReader(new InputStreamReader(System.in));
-    ArrayList <Cuenta> cuentas = new ArrayList();
+    ArrayList <Cuenta> cuentas = new ArrayList <>();
     
     public Leer_Cuentas() {
          try{
