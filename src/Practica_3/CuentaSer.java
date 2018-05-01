@@ -33,7 +33,6 @@ public final class CuentaSer {
     public void Recuperar_Leer() {
 
         try {
-
             // RECUPERAMOS el fichero del formato byte.
             ObjectInputStream recuperar = new ObjectInputStream(new FileInputStream("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_3\\Cuentas.txt"));
             cuentas = (ArrayList<Cuenta>) recuperar.readObject();
@@ -42,11 +41,11 @@ public final class CuentaSer {
             for (Cuenta c : cuentas) {
                 if (c != null) {
                     System.out.println(c.toString());
-                }
+                }  
             }
 
         } catch (FileNotFoundException e) { // qué hacer si no se encuentra el fichero
-            System.out.println("No se encuentra el fichero");
+            System.out.println("No se encuentra el fichero");  
         } catch (ClassNotFoundException e) { // qué hacer si no se encuentra el fichero
             System.out.println("No se encuentra una clase con ese nombre de definición");
         } catch (IOException e) { // qué hacer si hay un error en la lectura del fichero
@@ -55,7 +54,6 @@ public final class CuentaSer {
     }
 
     public void Sobreescribir() {
-        
         try {
             ObjectOutputStream serializar = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Javier\\Documents\\NetBeansProjects\\Tema5_Ficheros\\src\\Practica_3\\Cuentas.txt"));
             serializar.writeObject(cuentas);
