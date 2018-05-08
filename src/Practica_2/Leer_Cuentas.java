@@ -13,7 +13,8 @@ import java.util.StringTokenizer;
  * @author Javier
  */
 public class Leer_Cuentas {
-    public static void main(String[] args) {
+    
+public static void main(String[] args) {
         new Leer_Cuentas();
     }
     
